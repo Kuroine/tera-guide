@@ -33,7 +33,7 @@ module.exports = {
     "s-3202-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""}],
 
     //Pizza Boi
-	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp',"message_RU": ""},
+	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp (IN>OUT WAVES)',"message_RU": ""},
 						 //LEFT MARKERS
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
@@ -44,7 +44,7 @@ module.exports = {
     "s-3202-1000-122-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
     "s-3202-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
 
-	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp',"message_RU": ""},
+	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp (OUT>IN WAVES)',"message_RU": ""},
 						//LEFT MARKERS
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
