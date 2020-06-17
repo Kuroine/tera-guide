@@ -11,6 +11,10 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
+	"s-3202-1000-107-0": [{"type": "text","sub_type": "message","message": 'Spectral Throw',"message_RU": ""}],
+
+	"s-3202-1000-103-0": [{"type": "text","sub_type": "message","message": 'Stun(INC)',"message_RU": ""}],
+
 	"s-3202-1000-105-0": [{"type": "text","sub_type": "message","message": 'Stun(INC)',"message_RU": ""}],
 	"s-3202-1000-106-0": [{"type": "text","sub_type": "message","message": 'Stun',"message_RU": ""}],
 	
@@ -19,7 +23,8 @@ module.exports = {
 	"s-3202-1000-120-0": [{"type": "text","sub_type": "message","message": 'Many Pokes>Stun',"message_RU": ""}],
     "s-3202-1000-114-0": [{"type": "text","sub_type": "message","message": 'Stun(AOE)',"message_RU": ""}],
 
-    "s-3202-1000-115-0": [{"type": "text","sub_type": "message","message": 'Spread to Gather(If no ninja)',"message_RU": ""}],
+	"s-3202-1000-115-0": [{"type": "text","sub_type": "message","message": 'Spread to Gather(If no ninja)',"message_RU": ""},
+						 {"type": "text","sub_type": "message","delay": 3000,"message": 'Gather!',"message_RU": ""}],
 
     "s-3202-1000-112-0": [{"type": "text","sub_type": "message","message": 'Front-Back Kick',"message_RU": ""}],
 
@@ -28,25 +33,25 @@ module.exports = {
     "s-3202-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""}],
 
     //Pizza Boi
-	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right foot drawn - incoming Stomp (IN to OUT Waves)',"message_RU": ""},
+	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp',"message_RU": ""},
 						 //LEFT MARKERS
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
 						 //RIGHT MARKERS
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,65,400,0,4000)},
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,125,400,0,4000)},
-						 {"type": "text","sub_type": "message","delay": 2000,"message": 'Dodge!',"message_RU": ""}],
+						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
     "s-3202-1000-122-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
     "s-3202-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
 
-	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left foot drawn - incoming Stomp (OUT to IN Waves)',"message_RU": ""},
+	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp',"message_RU": ""},
 						//LEFT MARKERS
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
 						//RIGHT MARKERS
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,65,400,0,4000)},
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,125,400,0,4000)},
-						 {"type": "text","sub_type": "message","delay": 2000,"message": 'Dodge!',"message_RU": ""}],
+						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
     "s-3202-1000-125-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
 	"s-3202-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
 	
