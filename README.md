@@ -1,14 +1,10 @@
 # tera-guide
 A generic guide module for TERA with English and Russian translations (detects automaticly). Display hints on screen and drawing zones of bosses attacks and mechanics. Supports of all actual dungeons.
 
-Основной модуль подсказок по данжам TERA с поддержкой русского и английского языков. Вывод подсказок в чат или на экран, а также отрисовка зон атак боссов и механик. Поддерживаются все актуальные данжи.
-
 ## Dependencies / Зависимости
 https://github.com/tera-toolbox-mods/library
 
 Extract to "mods" directory in your Tera-Proxy. DO NOT INSTALLED IT AS "library-master" MAKE SURE IT'S NAMED "library".
-
-Распаковать в директорию "mods" в вашей Tera-Proxy. НЕ РАСПАКОВЫВАТЬ КАК "library-master", ДИРЕКТОРИЯ ДОЛЖНА НАЗЫВАТЬСЯ "library".
 
 ## Commands / Команды
 Toolbox(/8) | Command description | Описание команды
@@ -38,6 +34,8 @@ id | Dungeon Name | Название данжа
 3026 | Corrupted Skynest | Логово Келсаика
 3126 | Corrupted Skynest (Hard) | Логово Бессмертного Келсаика
 3027 | Forbidden Arena | Арена безумия
+3102 | Draakon Arena - WIP
+3202 | Draakon Arena (Hard) -WIP
 
 ## Development and debugging / Разработка и отладка
 Подробнее на https://github.com/hsdn/tera-guide/wiki
@@ -48,3 +46,4 @@ id | Dungeon Name | Название данжа
 - Kasea - https://github.com/tera-toolbox-mods/tera-guide
 - ITunk - https://github.com/GrafNikola
 - Owyn - https://github.com/Owyn
+- hsdn - https://github.com/hsdn/tera-guide
