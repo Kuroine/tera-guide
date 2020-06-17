@@ -7,7 +7,7 @@
         "abnormal": false,
         "skill": false,
         "boss": false,
-        "dm": false,
+        "dm": true,
         "qb": false
     }
 }

@@ -8,10 +8,10 @@
         "settingsMigrator": "settings_migrator.js",
         "settingsVersion": "1.04"
     },
-    "author": "HSDN / ZC / ITunk / michengs / Kasea",
+    "author": "HSDN / ZC / ITunk / michengs / Kasea / ?_?",
     "description": "A generic guide module for TERA. Display hints on screen and drawing zones of bosses attacks and mechanics.",
-    "servers": ["https://raw.githubusercontent.com/hsdn/tera-guide/master/"],
-    "supportUrl": "https://github.com/hsdn/tera-guide/issues",
+    "servers": ["https://raw.githubusercontent.com/kuroine/tera-guide/master/"],
+    "supportUrl": "https://github.com/kuroine/tera-guide/issues",
     "dependencies": {
         "library": "https://raw.githubusercontent.com/tera-toolbox-mods/library/master/module.json"
     },
