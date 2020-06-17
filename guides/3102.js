@@ -11,26 +11,31 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
+	//RESS Bait //Range Check
 	"s-3102-1000-107-0": [{"type": "text","sub_type": "message","message": 'Spectral Throw',"message_RU": ""}],
 
-	"s-3102-1000-103-0": [{"type": "text","sub_type": "message","message": 'Stun(INC)',"message_RU": ""}],
-
-	"s-3102-1000-105-0": [{"type": "text","sub_type": "message","message": 'Stun(INC)',"message_RU": ""}],
+	//Basic Attacks
+	"s-3102-1000-103-0": [{"type": "text","sub_type": "message","message": '2Hits>Bleed',"message_RU": ""}],
+	"s-3102-1000-113-0": [{"type": "text","sub_type": "message","message": '4 Hits Combo',"message_RU": ""}],
+	"s-3102-1000-104-0": [{"type": "text","sub_type": "message","message": 'Uppercut>Stun(INC)',"message_RU": ""}],
 	"s-3102-1000-106-0": [{"type": "text","sub_type": "message","message": 'Stun',"message_RU": ""}],
-	
-	"s-3102-1000-111-0": [{"type": "text","sub_type": "message","message": 'Leap(Stun)',"message_RU": ""}],
 
 	"s-3102-1000-120-0": [{"type": "text","sub_type": "message","message": 'Many Pokes>Stun',"message_RU": ""}],
-    "s-3102-1000-114-0": [{"type": "text","sub_type": "message","message": 'Stun(AOE)',"message_RU": ""}],
+	"s-3102-1000-114-0": [{"type": "text","sub_type": "message","message": 'Stun(AOE)',"message_RU": ""}],
+	
+	//Leap
+	"s-3102-1000-111-0": [{"type": "text","sub_type": "message","message": 'Leap(Stun)',"message_RU": ""}],
 
-	"s-3102-1000-115-0": [{"type": "text","sub_type": "message","message": 'Spread to Gather(If no ninja)',"message_RU": ""},
+	"s-3102-1000-115-0": [{"type": "text","sub_type": "message","message": 'AOE Bombs(SPREAD IF NO NINJA)',"message_RU": ""},
 						 {"type": "text","sub_type": "message","delay": 3000,"message": 'Gather!',"message_RU": ""}],
 
     "s-3102-1000-112-0": [{"type": "text","sub_type": "message","message": 'Front-Back Kick',"message_RU": ""}],
 
     "s-3102-1000-110-0": [{"type": "text","sub_type": "message","message": 'Jump(In-out-wave)',"message_RU": ""}],
 
-    "s-3102-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""}],
+	"s-3102-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""}],
+	
+	"s-3102-1000-304-0": [{"type": "text","sub_type": "message","message": 'Shield!',"message_RU": ""}],
 
     //Pizza Boi
 	"s-3102-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp',"message_RU": ""},
