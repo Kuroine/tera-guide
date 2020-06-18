@@ -34,8 +34,8 @@ id | Dungeon Name | Название данжа
 3026 | Corrupted Skynest | Логово Келсаика
 3126 | Corrupted Skynest (Hard) | Логово Бессмертного Келсаика
 3027 | Forbidden Arena | Арена безумия
-3102 | Draakon Arena - WIP
-3202 | Draakon Arena (Hard) -WIP
+3102 | Draakon Arena
+3202 | Draakon Arena (Hard)
 
 ## Development and debugging / Разработка и отладка
 Подробнее на https://github.com/hsdn/tera-guide/wiki
