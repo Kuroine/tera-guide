@@ -17,7 +17,7 @@ module.exports = {
 	//Basic Attacks
 	"s-3102-1000-103-0": [{"type": "text","sub_type": "message","message": '2Hits>Bleed',"message_RU": ""}],
 	"s-3102-1000-113-0": [{"type": "text","sub_type": "message","message": '4 Hits Combo',"message_RU": ""}],
-	"s-3102-1000-104-0": [{"type": "text","sub_type": "message","message": 'Uppercut>Stun(INC)',"message_RU": ""}],
+	"s-3102-1000-105-0": [{"type": "text","sub_type": "message","message": 'Uppercut>Stun(INC)',"message_RU": ""}],
 	"s-3102-1000-106-0": [{"type": "text","sub_type": "message","message": 'Stun',"message_RU": ""}],
 
 	"s-3102-1000-120-0": [{"type": "text","sub_type": "message","message": 'Many Pokes>Stun',"message_RU": ""}],
@@ -40,22 +40,22 @@ module.exports = {
     //Pizza Boi
 	"s-3102-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp',"message_RU": ""},
 						 //LEFT MARKERS
-						 {"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
-						 {"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
+						 {"type": "func","func": SpawnVector.bind(null,912,0,0,255,400,0,4000)},
+						 {"type": "func","func": SpawnVector.bind(null,912,0,0,295,400,0,4000)},
 						 //RIGHT MARKERS
-						 {"type": "func","func": SpawnVector.bind(null,912,0,0,65,400,0,4000)},
-						 {"type": "func","func": SpawnVector.bind(null,912,0,0,125,400,0,4000)},
+						 {"type": "func","func": SpawnVector.bind(null,912,0,0,75,400,0,4000)},
+						 {"type": "func","func": SpawnVector.bind(null,912,0,0,115,400,0,4000)},
 						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
     "s-3102-1000-122-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
     "s-3102-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
 
 	"s-3102-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp',"message_RU": ""},
 						//LEFT MARKERS
-						{"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
-						{"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
+						{"type": "func","func": SpawnVector.bind(null,912,0,0,255,400,0,4000)},
+						{"type": "func","func": SpawnVector.bind(null,912,0,0,295,400,0,4000)},
 						//RIGHT MARKERS
-						{"type": "func","func": SpawnVector.bind(null,912,0,0,65,400,0,4000)},
-						{"type": "func","func": SpawnVector.bind(null,912,0,0,125,400,0,4000)},
+						{"type": "func","func": SpawnVector.bind(null,912,0,0,75,400,0,4000)},
+						{"type": "func","func": SpawnVector.bind(null,912,0,0,115,400,0,4000)},
 						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
     "s-3102-1000-125-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
 	"s-3102-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
