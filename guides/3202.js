@@ -36,7 +36,7 @@ module.exports = {
 	"s-3202-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""}],
 	
 	"s-3202-1000-304-0": [{"type": "text","sub_type": "message","message": 'Shield!',"message_RU": ""}],
-	"ab-3202-1000-31021006": [{"type": "text","sub_type": "message","message": 'Plague/Regress',"message_RU": ""}],
+	"ab-3202-1000-32021006": [{"type": "text","sub_type": "message","message": 'Plague/Regress',"message_RU": ""}],
 
     //Pizza Boi
 	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp (IN>OUT WAVES)',"message_RU": ""},
