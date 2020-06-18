@@ -66,11 +66,13 @@ function debuff_added(id, handlers) {
 	}, 70000);
 	timer2 = setTimeout(() => {
 		if (debuff != null) {
-			handlers['text']({
-				"sub_type": "notification",
-				"message": (`${debuff_TipMsg[debuff % 2].msgt}`),
-				"message_RU": (`${debuff_TipMsg[debuff % 2].msg}`)
-			});
+			setTimeout(() => {
+				handlers['text']({
+					"sub_type": "notification",
+					"message": (`${debuff_TipMsg[debuff % 2].msgt}`),
+					"message_RU": (`${debuff_TipMsg[debuff % 2].msg}`)
+				});
+			}, 2000);
 			handlers['text']({
 				"sub_type": "message",
 				"message": "Debuff 50s",
