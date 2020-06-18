@@ -47,7 +47,8 @@ module.exports = {
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,65,400,0,4000)},
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,125,400,0,4000)},
 						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
-    "s-3202-1000-122-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
+    "s-3202-1000-122-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""},
+						 {"type": "func","func": SpawnItem.bind(null,89544,0,200,100,4000)}],
     "s-3202-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
 
 	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp (OUT>IN WAVES)',"message_RU": ""},
@@ -58,6 +59,7 @@ module.exports = {
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,65,400,0,4000)},
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,125,400,0,4000)},
 						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
-    "s-3202-1000-125-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""}],
+    "s-3202-1000-125-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""},
+	  					 {"type": "func","func": SpawnItem.bind(null,89544,0,200,100,4000)}],
 	"s-3202-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}]
 };
