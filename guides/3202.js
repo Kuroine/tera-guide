@@ -52,6 +52,10 @@ module.exports = {
 	"s-3202-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""},
 						 {"type": "text","sub_type": "message","delay":100,"message": 'IN>OUT WAVES',"message_RU": ""}],
 
+	"s-3202-1000-127-0": [{"type": "text","sub_type": "message","message": '(IN>OUT WAVES)',"message_RU": ""},
+						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,157,0,5000)},
+						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,307,0,5000)}],				 
+
 	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp (OUT>IN WAVES)',"message_RU": ""},
 						//LEFT MARKERS
 						{"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
@@ -63,6 +67,9 @@ module.exports = {
     "s-3202-1000-125-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""},
 	  					 {"type": "func","func": SpawnItem.bind(null,89544,0,200,100,4000)}],
 	"s-3202-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""},
-						{"type": "text","sub_type": "message","delay":100,"message": 'OUT>IN WAVES',"message_RU": ""}]
+						{"type": "text","sub_type": "message","delay":100,"message": 'OUT>IN WAVES',"message_RU": ""}],
 						//128
+	"s-3202-1000-128-0": [{"type": "text","sub_type": "message","message": '(IN>OUT WAVES)',"message_RU": ""},
+						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,143,0,5000)},
+						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,0,5000)}]
 };
