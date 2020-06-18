@@ -69,7 +69,7 @@ module.exports = {
 	"s-3202-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""},
 						{"type": "text","sub_type": "message","delay":100,"message": 'OUT>IN WAVES',"message_RU": ""}],
 						//128
-	"s-3202-1000-128-0": [{"type": "text","sub_type": "message","message": '(IN>OUT WAVES)',"message_RU": ""},
+	"s-3202-1000-128-0": [{"type": "text","sub_type": "message","message": '(OUT>IN WAVES)',"message_RU": ""},
 						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,143,0,5000)},
 						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,0,5000)}]
 };
