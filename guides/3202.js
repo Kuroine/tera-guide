@@ -49,7 +49,8 @@ module.exports = {
 						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
     "s-3202-1000-122-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""},
 						 {"type": "func","func": SpawnItem.bind(null,89544,0,200,100,4000)}],
-    "s-3202-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}],
+	"s-3202-1000-123-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""},
+						 {"type": "text","sub_type": "message","delay":100,"message": 'IN>OUT WAVES',"message_RU": ""}],
 
 	"s-3202-1000-124-0": [{"type": "text","sub_type": "message","message": 'Left Foot - incoming Stomp (OUT>IN WAVES)',"message_RU": ""},
 						//LEFT MARKERS
@@ -61,5 +62,7 @@ module.exports = {
 						 {"type": "text","sub_type": "message","delay": 1900,"message": 'Dodge!',"message_RU": ""}],
     "s-3202-1000-125-0": [{"type": "text","sub_type": "message","message": 'Front-back pizza',"message_RU": ""},
 	  					 {"type": "func","func": SpawnItem.bind(null,89544,0,200,100,4000)}],
-	"s-3202-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""}]
+	"s-3202-1000-126-0": [{"type": "text","sub_type": "message","message": 'Back pizza',"message_RU": ""},
+						{"type": "text","sub_type": "message","delay":100,"message": 'OUT>IN WAVES',"message_RU": ""}]
+						//128
 };
