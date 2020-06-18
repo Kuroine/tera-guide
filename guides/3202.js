@@ -33,7 +33,8 @@ module.exports = {
 
     "s-3202-1000-110-0": [{"type": "text","sub_type": "message","message": 'Jump(In-out-wave)',"message_RU": ""}],
 
-	"s-3202-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""}],
+	"s-3202-1000-109-0": [{"type": "text","sub_type": "message","message": 'Knockdown-Spin',"message_RU": ""},
+						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,457,0,5000)}],
 	
 	"s-3202-1000-304-0": [{"type": "text","sub_type": "message","message": 'Shield!',"message_RU": ""}],
 	"ab-3202-1000-32021006": [{"type": "text","sub_type": "message","message": 'Plague/Regress',"message_RU": ""}],
