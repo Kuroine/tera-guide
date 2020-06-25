@@ -43,7 +43,6 @@ module.exports = {
 	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp (IN>OUT WAVES)',"message_RU": ""},
 						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,707,0,5000)},
 						 //LEFT MARKERS
-						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,707,0,5000)},
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,245,400,0,4000)},
 						 {"type": "func","func": SpawnVector.bind(null,912,0,0,305,400,0,4000)},
 						 //RIGHT MARKERS
