@@ -43,16 +43,17 @@ class TeraGuide{
 			"func": func_handler,
 			"lib": require('./lib')
 		};
-		if (dispatch.proxyAuthor !== 'caali') {
-			const options = require('./module').options;
-			if (options) {
-				const settingsVersion = options.settingsVersion;
-				if (settingsVersion) {
-					dispatch.settings = require('./' + (options.settingsMigrator || 'settings_migrator.js'))(dispatch.settings._version, settingsVersion, dispatch.settings);
-					dispatch.settings._version = settingsVersion;
-				}
-			}
-		}
+		// if (dispatch.proxyAuthor !== 'caali') {
+		// 	const options = require('./module').options;
+		// 	if (options) {
+		// 		const settingsVersion = options.settingsVersion;
+		// 		if (settingsVersion) {
+		// 			dispatch.settings = require('./' + (options.settingsMigrator || 'settings_migrator.js'))(dispatch.settings._version, settingsVersion, dispatch.settings);
+		// 			dispatch.settings._version = settingsVersion;
+		// 		}
+		// 	}
+		// }
+		
 		// export functionality for 3rd party modules
 		this.handlers = function_event_handlers;
 		// Supported languages by client
