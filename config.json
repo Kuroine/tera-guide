@@ -150,7 +150,22 @@
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
+            },
+            {
+                "id": 3103,
+                "name": "Forbidden Arena [Undying Warlord]",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3203,
+                "name": "Forbidden Arena [Nightmare Undying Warlord]",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
             }
+
         ],
         "cc": [
             "</font><font color=\"#ffff00\">"
