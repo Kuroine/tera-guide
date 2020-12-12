@@ -139,14 +139,14 @@
             },
             {
                 "id": 3102,
-                "name": "Draakon Arena Normal Mode",
+                "name": "Draakon Arena",
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
             },
             {
                 "id": 3202,
-                "name": "Draakon Arena Hard Mode",
+                "name": "Draakon Arena (Hard)",
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
@@ -167,7 +167,7 @@
             },
             {
                 "id": 9056,
-                "name": "Timescape Hard Mode",
+                "name": "Timescape (Hard)",
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
