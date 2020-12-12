@@ -164,6 +164,13 @@
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
+            },
+            {
+                "id": 9056,
+                "name": "Timescape Hard Mode",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
             }
 
         ],
