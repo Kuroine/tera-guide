@@ -22,10 +22,34 @@ module.exports = {
 	"s-456-1001-107-0": [{ "type": "text", "sub_type": "message", "message": "Shot", "message_RU": ""}],
 
 		// Boss 1 (phase 2)
-		// "s-456-413-104-0": "s-456-401-104-0",
-		// "s-456-414-104-0": "s-456-401-104-0",
-		// "s-456-415-104-0": "s-456-401-104-0",
-		// "s-456-416-104-0": "s-456-401-104-0",
+		"s-456-413-104-0": [
+			{"type": "text", "sub_type": "message", "message": "Bomb", "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(1)", "delay": 550, "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(2)", "delay": 1300, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(3)", "delay": 2050, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(4) Dodge!", "delay": 2800, "message_RU": "" }
+		],
+		"s-456-414-104-0": [
+			{"type": "text", "sub_type": "message", "message": "Bomb", "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(1)", "delay": 550, "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(2)", "delay": 1300, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(3)", "delay": 2050, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(4) Dodge!", "delay": 2800, "message_RU": "" }
+		],
+		"s-456-415-104-0": [
+			{"type": "text", "sub_type": "message", "message": "Bomb", "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(1)", "delay": 550, "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(2)", "delay": 1300, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(3)", "delay": 2050, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(4) Dodge!", "delay": 2800, "message_RU": "" }
+		],
+		"s-456-416-104-0": [
+			{"type": "text", "sub_type": "message", "message": "Bomb", "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(1)", "delay": 550, "message_RU": ""},
+			{"type": "text", "sub_type": "message", "message": "(2)", "delay": 1300, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(3)", "delay": 2050, "message_RU": "" },
+			{"type": "text", "sub_type": "message", "message": "(4) Dodge!", "delay": 2800, "message_RU": "" }
+		],
 		"s-456-1000-107-0": [{ "type": "text", "sub_type": "message", "message": "Shot", "message_RU": ""}],
 		"ab-456-1000-905685": [
 			{ "type": "text", "sub_type": "message", "message": "Plague/Regress", "message_RU": ""}
