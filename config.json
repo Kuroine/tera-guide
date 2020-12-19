@@ -171,6 +171,13 @@
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
+            },
+            {
+                "id": 9950,
+                "name": "Harrowhold",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
             }
         ],
         "cc": [
