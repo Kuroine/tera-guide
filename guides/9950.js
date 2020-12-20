@@ -2,21 +2,19 @@
 // WIP
 // 
 
-//let player, entity, library, effect;
+let player, entity, library, effect;
 
 let spawn_orb = false, seventy_percent = false;
 
 const {HIGHLIGHT_ITEM, SpawnItem, SpawnMarker, SpawnVector, SpawnCircle} = require("../lib");
-
-function orb_rotation(){
-	spawn_orb = !spawn_orb;
-}
 
 function seventy(){
 	seventy_percent = true;
 }
 
 function print_orb(handlers) {
+	spawn_orb = !spawn_orb;
+
 	if (spawn_orb) {
 		handlers['text']({
 			"sub_type": "message",
@@ -150,9 +148,7 @@ module.exports = {
 
 	"s-950-3000-106-0": [{"type": "text","sub_type": "message","message": 'Hakan',"message_RU": ""}],
 
-	"s-950-3000-111-0": [{"type": "func","func": orb_rotation}],
-	"s-950-3000-111-0": [{"type": "func","func": print_orb}],
-	
+	"s-950-3000-111-0": [{"type": "func","func": print_orb}],	
 	//"s-950-3000-111-0": [{"type": "text","sub_type": "message","message": 'Debuff',"message_RU": ""}],
 	
 
