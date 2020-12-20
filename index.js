@@ -204,6 +204,7 @@ class TeraGuide{
 			// else{ 
 			// 	eskillid = e.skill.id % 1000;
 			// }
+			
 			// If the guide module is active and a guide for the current dungeon is found
 			if (dispatch.settings.enabled && guide_found) {
 				const ent = entity['mobs'][e.gameId.toString()];
@@ -211,13 +212,13 @@ class TeraGuide{
 				e.loc.w = e.w;
 				// We've confirmed it's a mob, so it's plausible we want to act on this
 				if (spguide) {
-					if (ent) return handle_event(Object.assign({}, ent, e), e.skill.id, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
+					if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
 				}
 				else if (esguide) {
 					if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
 				}
 				else{
-					if (ent) return handle_event(Object.assign({}, ent, e), skillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
+					if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
 				}
 			}
 		}
