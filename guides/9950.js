@@ -2,14 +2,18 @@
 // WIP
 // 
 
-let player, entity, library, effect;
+//let player, entity, library, effect;
 
-let spawn_orb = false;
+let spawn_orb = false, seventy_percent = false;
 
 const {HIGHLIGHT_ITEM, SpawnItem, SpawnMarker, SpawnVector, SpawnCircle} = require("../lib");
 
 function orb_rotation(){
 	spawn_orb = !spawn_orb;
+}
+
+function seventy(){
+	seventy_percent = true;
 }
 
 function print_orb(handlers) {
@@ -24,6 +28,23 @@ function print_orb(handlers) {
 		handlers['text']({
 			"sub_type": "message",
 			"message": "Debuff",
+			"message_RU": ""
+		});
+	}
+}
+
+function print_seventy(handlers) {
+	if (seventy_percent) {
+		handlers['text']({
+			"sub_type": "message",
+			"message": "4 Elemental(Orb After)",
+			"message_RU": ""
+		});
+	}
+	else{
+		handlers['text']({
+			"sub_type": "message",
+			"message": "2 Elemental",
 			"message_RU": ""
 		});
 	}
@@ -60,6 +81,11 @@ module.exports = {
 	//3000-102-0
 	//Right paw
 	//3000-101-0
+
+	//h-950-3000-70
+	"h-950-3000-70": [{"type": "func","func": seventy}],
+	//dm-0-0-9950060
+	"dm-0-0-9950060": [{"type": "func","func": print_seventy}],
 
 	//Left blood
 	//s-950-3005-206-0 
