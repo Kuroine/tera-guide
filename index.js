@@ -188,7 +188,22 @@ class TeraGuide{
 		function s_action_stage(e) {
 			let skillid = e.skill.id % 1000;
 			let eskillid;
-			if (e.skill.id > 3000){ eskillid = e.skill.id } else { eskillid = e.skill.id % 1000}
+
+			if(spguide){
+				eskillid = e.skill.id;
+			}
+			else if(esguide){
+				eskillid = e.skill.id > 3000 ? e.skill.id : e.skill.id % 1000;
+			}
+			else{
+				eskillid = e.skill.id % 1000;
+			}
+			// if (e.skill.id > 3000){
+			// 	eskillid = e.skill.id;
+			// } 
+			// else{ 
+			// 	eskillid = e.skill.id % 1000;
+			// }
 			// If the guide module is active and a guide for the current dungeon is found
 			if (dispatch.settings.enabled && guide_found) {
 				const ent = entity['mobs'][e.gameId.toString()];
