@@ -52,7 +52,8 @@ module.exports = {
 		],
 		"s-456-1000-107-0": [{ "type": "text", "sub_type": "message", "message": "Shot", "message_RU": ""}],
 		"ab-456-1000-905685": [
-			{ "type": "text", "sub_type": "message", "message": "Plague/Regress", "message_RU": ""}
+			{ "type": "text", "sub_type": "message", "message": "Regress", "message_RU": "", "class_position": "mystic"},
+			{ "type": "text", "sub_type": "message", "message": "Plague", "message_RU": "", "class_position": "priest"}
 		],
 
 		// Boss 2
@@ -67,7 +68,8 @@ module.exports = {
 
 		// Boss 3
 		"ab-456-1003-905607": [
-			{ "type": "text", "sub_type": "message", "message": "Cleanse + Plague/Regress", "message_RU": ""}
+			{ "type": "text", "sub_type": "message", "message": "Cleanse + Regress", "message_RU": "", "class_position": "mystic"},
+			{ "type": "text", "sub_type": "message", "message": "Cleanse + Plague", "message_RU": "", "class_position": "priest"}
 		],
 		"s-456-1003-103-0": [{ "type": "text", "sub_type": "message", "message": "Spin", "message_RU": ""}],
 		"s-456-1003-104-0": [{ "type": "text", "sub_type": "message", "message": "Clap", "message_RU": ""}],

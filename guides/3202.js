@@ -37,7 +37,10 @@ module.exports = {
 						 {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,457,0,5000)}],
 	
 	"s-3202-1000-304-0": [{"type": "text","sub_type": "message","message": 'Shield!',"message_RU": ""}],
-	"ab-3202-1000-32021006": [{"type": "text","sub_type": "message","message": 'Plague/Regress',"message_RU": ""}],
+	"ab-3202-1000-32021006": [
+		{"type": "text","sub_type": "message","message": 'Plague',"message_RU": "", "class_position": "priest"},
+		{"type": "text","sub_type": "message","message": 'Regress',"message_RU": "", "class_position": "mystic"}
+	],
 
     //Pizza Boi
 	"s-3202-1000-121-0": [{"type": "text","sub_type": "message","message": 'Right Foot - incoming Stomp (IN>OUT WAVES)',"message_RU": ""},
