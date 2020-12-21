@@ -2,6 +2,8 @@ const DispatchWrapper = require('./dispatch');
 const fs = require('fs');
 const path = require('path');
 const dbg = require('./dbg');
+const eszones = require('./esguidezones')
+const spzones = require('./spguidezones')
 let voice = null;
 try { voice = require('./voice') }
 catch(e) { voice = null; }
@@ -324,14 +326,22 @@ class TeraGuide{
 					throw 'Guide for zone ' + zone + ' not found in config';
 				}
 				active_guide = require('./guides/' + zone);
-				if ([3126, 3026, 9750, 9066, 9050, 9054, 9754, 9916, 9781, 9044, 9070, 9920, 9970, 9981, 3017].includes(zone)) {
-					spguide = true;   // skill  1000-3000 
+				if (spzones.id.includes(zone)) {
+					//******SKILL ID RANGES******//
+					//ENR 2000-2999 //NON-ENR 1000-1999 //3000-3999
+					spguide = true;
 					esguide = false;
-				} else if ([9000, 3023, 9759, 9056].includes(zone)) {
-					spguide = false; // skill  100-200-3000 
+				} 
+				else if (eszones.id.includes(zone)) {
+					//******SKILL ID RANGES******//
+					//100-299 //3000-3999
+					spguide = false;
 					esguide = true;
-				} else {
-					spguide = false; // skill  100-200 
+				} 
+				else {
+					//******SKILL ID RANGES******//
+					//100-399
+					spguide = false;  
 					esguide = false;
 				}
 				guide_found = true;
