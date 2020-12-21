@@ -324,10 +324,10 @@ class TeraGuide{
 					throw 'Guide for zone ' + zone + ' not found in config';
 				}
 				active_guide = require('./guides/' + zone);
-				if ([3126, 3026, 9750, 9066, 9050, 9054, 9754, 9916, 9781, 9044, 9070, 9920, 9970, 9981].includes(zone)) {
+				if ([3126, 3026, 9750, 9066, 9050, 9054, 9754, 9916, 9781, 9044, 9070, 9920, 9970, 9981, 3017].includes(zone)) {
 					spguide = true;   // skill  1000-3000 
 					esguide = false;
-				} else if ([9000, 3023, 9759].includes(zone)) {
+				} else if ([9000, 3023, 9759, 9056].includes(zone)) {
 					spguide = false; // skill  100-200-3000 
 					esguide = true;
 				} else {
