@@ -2,8 +2,8 @@ const DispatchWrapper = require('./dispatch');
 const fs = require('fs');
 const path = require('path');
 const dbg = require('./dbg');
-const eszones = require('./esguidezones')
-const spzones = require('./spguidezones')
+const eszones = require('./zones/esguidezones')
+const spzones = require('./zones/spguidezones')
 let voice = null;
 try { voice = require('./voice') }
 catch(e) { voice = null; }
@@ -45,17 +45,7 @@ class TeraGuide{
 			"func": func_handler,
 			"lib": require('./lib')
 		};
-		// if (dispatch.proxyAuthor !== 'caali') {
-		// 	const options = require('./module').options;
-		// 	if (options) {
-		// 		const settingsVersion = options.settingsVersion;
-		// 		if (settingsVersion) {
-		// 			dispatch.settings = require('./' + (options.settingsMigrator || 'settings_migrator.js'))(dispatch.settings._version, settingsVersion, dispatch.settings);
-		// 			dispatch.settings._version = settingsVersion;
-		// 		}
-		// 	}
-		// }
-		
+	
 		// export functionality for 3rd party modules
 		this.handlers = function_event_handlers;
 		// Supported languages by client
@@ -188,7 +178,6 @@ class TeraGuide{
 
 		// Boss skill action
 		function s_action_stage(e) {
-			let skillid = e.skill.id % 1000;
 			let eskillid;
 
 			if(spguide){
@@ -199,13 +188,7 @@ class TeraGuide{
 			}
 			else{
 				eskillid = e.skill.id % 1000;
-			}
-			// if (e.skill.id > 3000){
-			// 	eskillid = e.skill.id;
-			// } 
-			// else{ 
-			// 	eskillid = e.skill.id % 1000;
-			// }
+			}	
 			
 			// If the guide module is active and a guide for the current dungeon is found
 			if (dispatch.settings.enabled && guide_found) {
@@ -213,15 +196,7 @@ class TeraGuide{
 				// Due to a bug for some bizare reason(probably proxy fucking itself) we do this ugly hack
 				e.loc.w = e.w;
 				// We've confirmed it's a mob, so it's plausible we want to act on this
-				if (spguide) {
-					if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
-				}
-				else if (esguide) {
-					if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
-				}
-				else{
-					if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
-				}
+				if (ent) return handle_event(Object.assign({}, ent, e), eskillid, 'Skill', 's', debug.debug || debug.skill || (ent['templateId'] % 1 === 0 ? debug.boss : false), e.speed, e.stage);
 			}
 		}
 		dispatch.hook('S_ACTION_STAGE', 9, {order: 15}, s_action_stage);
