@@ -145,7 +145,9 @@ module.exports = {
 
 	"am-950-3000-950068": [{"type": "text","sub_type": "message","message": 'Orange Debuff',"message_RU": ""}],
 	"am-950-3000-950069": [{"type": "text","sub_type": "message","message": 'Black Debuff',"message_RU": ""}],
-	
+
+	"am-950-3000-950200": [{"type": "text","sub_type": "message","message": '? Debuff(Corner)(O)',"message_RU": ""}],
+	"am-950-3000-950201": [{"type": "text","sub_type": "message","message": '? Debuff(Corner)(B)',"message_RU": ""}],
 	
 
 	//Black Left Red/Orange Right
