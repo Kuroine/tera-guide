@@ -109,6 +109,11 @@ module.exports = {
 	//3108-206-0
 	"s-950-3108-206-0": [{"type": "text","sub_type": "message","message": 'Blood Wall(Back)',"message_RU": ""}],
 	
+
+	//Front Blood Center Safe
+	//3103-206-0
+	"s-950-3103-206-0": [{"type": "text","sub_type": "message","message": 'Big Blood Wall(Front)',"message_RU": ""}],
+
 	//Back Blood Center Safe
 	//3104-206-0
 	"s-950-3104-206-0": [{"type": "text","sub_type": "message","message": 'Big Blood Wall(Back)',"message_RU": ""}],
@@ -137,6 +142,9 @@ module.exports = {
 	//s-950-3112-206-0	
 	"s-950-3112-206-0": [{"type": "text","sub_type": "message","message": 'Elemental(Back)',"message_RU": ""}],
 	
+
+	"am-950-3000-950068": [{"type": "text","sub_type": "message","message": 'Orange Debuff',"message_RU": ""}],
+	"am-950-3000-950069": [{"type": "text","sub_type": "message","message": 'Black Debuff',"message_RU": ""}],
 	
 	
 
