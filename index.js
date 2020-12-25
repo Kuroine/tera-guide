@@ -8,10 +8,12 @@ let voice = null;
 try { voice = require('./voice') }
 catch(e) { voice = null; }
 // Tank class ids(brawler + lancer)
+//1 = Lancer
 const TANK_CLASS_IDS = [1, 10];
 // Dps class ids(not counting warrior)
 const DPS_CLASS_IDS = [2, 3, 4, 5, 8, 9, 11, 12];
 // Healer class ids
+//6 = Mystic 7 = Priest
 const HEALER_CLASS_IDS = [6, 7];
 // Warrior Defence stance abnormality ids
 const WARRIOR_TANK_IDS = [100200, 100201];
@@ -139,6 +141,18 @@ class TeraGuide{
 				case "heal": {
 					// if it's a healer return true
 					if(HEALER_CLASS_IDS.includes(player.job)) return true;
+					break;
+				}
+				case "priest":{
+					if(player.job === 6) return true;
+					break;
+				}
+				case "mystic":{
+					if(player.job === 7) return true;
+					break;
+				}
+				case "lancer":{
+					if(player.job === 1) return true;
 					break;
 				}
 				default: {
