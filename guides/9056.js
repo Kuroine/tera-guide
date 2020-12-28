@@ -60,7 +60,7 @@ module.exports = {
 		"s-456-1002-102-0": [{ "type": "text", "sub_type": "message", "message": "Jump", "message_RU": ""}],
 		"s-456-1002-103-0": [{ "type": "text", "sub_type": "message", "message": "Combo", "message_RU": ""}],
 		"s-456-1002-104-0": [{ "type": "text", "sub_type": "message", "message": "Shot (target)", "message_RU": ""}],
-		"s-456-1002-107-0": [{ "type": "text", "sub_type": "message", "message": "Furry Swipes", "message_RU": ""}],
+		"s-456-1002-107-0": [{ "type": "text", "sub_type": "message", "message": "Fury Swipes", "message_RU": ""}],
 		"s-456-1002-110-0": [{ "type": "text", "sub_type": "message", "message": "Clap(Stun)", "message_RU": ""}],
 		"s-456-1002-212-0": [{ "type": "text", "sub_type": "message", "message": "Jump Back", "message_RU": ""}],
 		"s-456-1002-3110-0": [{ "type": "text", "sub_type": "message", "message": "Breath", "message_RU": ""}],
