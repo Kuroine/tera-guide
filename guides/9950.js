@@ -141,13 +141,13 @@ module.exports = {
 	"s-950-3111-206-0": [{"type": "text","sub_type": "message","message": 'Elemental(Back)',"message_RU": ""}],
 	//s-950-3112-206-0	
 	"s-950-3112-206-0": [{"type": "text","sub_type": "message","message": 'Elemental(Back)',"message_RU": ""}],
-	
 
-	"am-950-3000-950068": [{"type": "text","sub_type": "message","message": 'Orange Debuff',"message_RU": ""}],
-	"am-950-3000-950069": [{"type": "text","sub_type": "message","message": 'Black Debuff',"message_RU": ""}],
+	/** Nice Buggy HH Debuff Mech Kekw **/
+	//"ae-0-0-950068": [{"type": "text","sub_type": "message","message": 'Red/Orange Debuff',"message_RU": ""}],
+	//"ae-0-0-950069": [{"type": "text","sub_type": "message","message": 'Black Debuff',"message_RU": ""}],
 
-	"am-950-3000-950200": [{"type": "text","sub_type": "message","message": '? Debuff(Corner)(O)',"message_RU": ""}],
-	"am-950-3000-950201": [{"type": "text","sub_type": "message","message": '? Debuff(Corner)(B)',"message_RU": ""}],
+	"ae-0-0-950200": [{"type": "text","sub_type": "message","message": '? Debuff(Orange)',"message_RU": ""}],
+	"ae-0-0-950201": [{"type": "text","sub_type": "message","message": '? Debuff(Black)',"message_RU": ""}],
 	
 
 	//Black Left Red/Orange Right
