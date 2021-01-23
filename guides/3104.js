@@ -17,7 +17,7 @@ module.exports = {
 	//Downward Slash (1 hit) (Chain Starter)
 
 	"qb-3104-1000-32042000": [{ "type": "text", "sub_type": "message", "message": "Arrows", "message_RU": "" }],
-	"h-3104-1000-35": [{ "type": "text", "sub_type": "message", "message": "35%", "message_RU": "35%" }],
+	//"h-3104-1000-35": [{ "type": "text", "sub_type": "message", "message": "35%", "message_RU": "35%" }],
 
 	"s-3104-1000-104-0": [{ "type": "text", "sub_type": "message", "message": "Stun (AOE)", "message_RU": "" }],
 	"s-3104-1000-107-0": [{ "type": "text", "sub_type": "message", "message": "Line Forward + Side Lines", "message_RU": "" }],
