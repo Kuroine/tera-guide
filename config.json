@@ -178,6 +178,20 @@
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
+            },
+            {
+                "id": 3104,
+                "name": "Lumikan's Dream",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3204,
+                "name": "Cruel Lumikan's Dream (Hard)",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
             }
         ],
         "cc": [
