@@ -192,6 +192,20 @@
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true
+            },
+            {
+                "id": 3106,
+                "name": "Killing Grounds",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 3206,
+                "name": "Crimson Killing Grounds",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
             }
         ],
         "cc": [
