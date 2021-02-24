@@ -4,10 +4,34 @@ let player, entity, library, effect;
 
 const {HIGHLIGHT_ITEM, SpawnItem, SpawnMarker, SpawnVector, SpawnCircle} = require("../lib");
 
+let combo_start = false;
+
+
+function combo_checker(){
+	combo_start = true;
+	setTimeout(combo_start = false, 4000);
+}
+function combo_cont(handlers){
+	if(combo_start == true){
+		handlers['text']({
+			"sub_type": "message",
+			"message": "Knockback SPIN INC",
+			"message_RU": ""
+		});
+	}
+}
+
+
 module.exports = {
 	load(dispatch) {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
+
+	//102 - 105 - 106 Combo
+
+	"s-3206-1000-102-0": [{"type": "func","func": combo_checker}],
+	"s-3206-1000-105-0": [{"type": "func","func": combo_cont}],
+
 
 	//1min 20 donut
 
