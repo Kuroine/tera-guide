@@ -9,48 +9,41 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
-	//"s-3106-1000-106-0": [{ "type": "text", "sub_type": "message", "message": "Knockback Spin", "message_RU": "" }], 
+	
+	"s-3106-1000-106-0": [{ "type": "text", "sub_type": "message", "message": "Knockback Spin", "message_RU": "" }],
 
 
-	//"s-3106-1000-209-0": [{ "type": "text", "sub_type": "message", "message": "Stomp(STUN HIM)", "message_RU": "" }], 
+	//513 stomp indicator?
+	//"s-3106-1000-513-0": [{ "type": "text", "sub_type": "message", "message": "Stomp INCOMING", "message_RU": "" }],
+	//"s-3106-1000-514-0": [{ "type": "text", "sub_type": "message", "message": "Stomp INCOMING", "message_RU": "" }],
 
-	//Red
-	//"s-3106-1000-211-0": [{ "type": "text", "sub_type": "message", "message": "Red Circle(IN-OUT)", "message_RU": "" }], 
+	"s-3106-1000-209-0": [{ "type": "text", "sub_type": "message", "message": "Stomp(STUN HIM)", "message_RU": "" }],
+	"s-3106-1000-210-0": [{ "type": "text", "sub_type": "message", "message": "Stomp(STUN HIM)", "message_RU": "" }],
+	"s-3106-1000-508-0": [{ "type": "text", "sub_type": "message", "message": "Red(IN-OUT)", "message_RU": "" },
+	{"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
+	{"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,1500)},
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,157,1500,5000)},
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,307,1500,5000)}],
+	"s-3106-1000-509-0": [{ "type": "text", "sub_type": "message", "message": "Blue(OUT-IN)", "message_RU": "" },
+	{"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
+	{"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,1500)},
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,143,1500,5000)},
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,1500,5000)}],
+
+	// "s-3106-1000-516-0": [{ "type": "text", "sub_type": "message", "message": "Fast Red(IN-OUT)", "message_RU": "" },
+	// {"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
+	// {"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,1500)},
+	// {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,157,1500,5000)},
+	// {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,307,1500,5000)}],
+	// "s-3106-1000-517-0": [{ "type": "text", "sub_type": "message", "message": "Fast Blue(OUT-IN)", "message_RU": "" },
+	// {"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
+	// {"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,1500)},
+	// {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,143,1500,5000)},
+	// {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,1500,5000)}],
 
 	//Over There
-	"qb-3106-1000-32061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
+	"qb-3106-1000-31061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
 	//Back There
-	"qb-3106-1000-32061002": [{ "type": "text", "sub_type": "message", "message": "Debuff(Furthest)", "message_RU": "" }]
-
-	//upward slash (1 hit)
-
-	//Cross Slash/Twin Stab (2 hit)
-
-	//Downward Slash (1 hit) (Chain Starter)
-
-	// "qb-3104-1000-32042000": [{ "type": "text", "sub_type": "message", "message": "Arrows", "message_RU": "" }],
-	// //"h-3104-1000-35": [{ "type": "text", "sub_type": "message", "message": "35%", "message_RU": "35%" }],
-
-	// "s-3104-1000-104-0": [{ "type": "text", "sub_type": "message", "message": "Stun (AOE)", "message_RU": "" },
-	// { "type": "func", "func": SpawnCircle.bind(null, false, 553, 180, -50, 10, 380, 0, 2000) },
-	// ],
-	// "s-3104-1000-107-0": [{ "type": "text", "sub_type": "message", "message": "Line Forward + Side Lines", "message_RU": "" }],
-	// "s-3104-1000-110-0": [{ "type": "text", "sub_type": "message", "message": "Target + Wave", "message_RU": "" }],
-	// "s-3104-1000-112-0": [{ "type": "text", "sub_type": "message", "message": "Wave Forward", "message_RU": " " }],
-	// "s-3104-1000-114-0": [{ "type": "text", "sub_type": "message", "message": "Inner + Outer AOEs", "message_RU": "" }],
-	// "s-3104-1000-116-0": [{ "type": "text", "sub_type": "message", "message": "Line Forward", "message_RU": " " }],
-	// "s-3104-1000-119-0": [{ "type": "text", "sub_type": "message", "message": "Two Strikes", "message_RU": "" }],
-	// "s-3104-1000-120-0": [{ "type": "text", "sub_type": "message", "message": "Two Strikes + Stun (AOE)", "message_RU": "" }],
-	// "s-3104-1000-123-0": [{ "type": "text", "sub_type": "message", "message": "Spin", "message_RU": "" }],
-	// "s-3104-1000-125-0": [{ "type": "text", "sub_type": "message", "message": "Stun (Tank)", "message_RU": "" }],
-	// "s-3104-1000-127-0": [{ "type": "text", "sub_type": "message", "message": "Pizza", "message_RU": "" }],
-	// "s-3104-1000-128-0": [{ "type": "text", "sub_type": "message", "message": "Pizza", "message_RU": "" }],
-	// "s-3104-1000-148-0": [{ "type": "text", "sub_type": "message", "message": "Pizza", "message_RU": "" }],
-	// "s-3104-1000-156-0": [{ "type": "text", "sub_type": "message", "message": "Get Skulls", "message_RU": "" }],
-	// "s-3104-1000-157-0": [{ "type": "text", "sub_type": "message", "message": "Gather!", "message_RU": "", "delay": 5000 }],
-	// "s-3104-1000-158-0": [{ "type": "text", "sub_type": "message", "message": "Gather!", "message_RU": "", "delay": 5000 }],
-	// "s-3104-1000-159-0": [{ "type": "text", "sub_type": "message", "message": "AOE", "message_RU": "" }]
-
-
+	"qb-3106-1000-31061002": [{ "type": "text", "sub_type": "message", "message": "Debuff(Furthest)", "message_RU": "" }]
 
 }
