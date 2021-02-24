@@ -10,6 +10,11 @@ module.exports = {
     },
 
 
+	//Over There
+	"qb-3206-1000-32061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
+	//Back There
+	"qb-3206-1000-32061002": [{ "type": "text", "sub_type": "message", "message": "Debuff(Furthest)", "message_RU": "" }]
+
 	//upward slash (1 hit)
 
 	//Cross Slash/Twin Stab (2 hit)

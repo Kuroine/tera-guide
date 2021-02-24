@@ -9,6 +9,18 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
+	//"s-3106-1000-106-0": [{ "type": "text", "sub_type": "message", "message": "Knockback Spin", "message_RU": "" }], 
+
+
+	//"s-3106-1000-209-0": [{ "type": "text", "sub_type": "message", "message": "Stomp(STUN HIM)", "message_RU": "" }], 
+
+	//Red
+	//"s-3106-1000-211-0": [{ "type": "text", "sub_type": "message", "message": "Red Circle(IN-OUT)", "message_RU": "" }], 
+
+	//Over There
+	"qb-3106-1000-32061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
+	//Back There
+	"qb-3106-1000-32061002": [{ "type": "text", "sub_type": "message", "message": "Debuff(Furthest)", "message_RU": "" }]
 
 	//upward slash (1 hit)
 
