@@ -15,8 +15,20 @@ function combo_cont(handlers){
 	if(combo_start == true){
 		handlers['text']({
 			"sub_type": "message",
+			"message": "Knockback SPIN INC(KAIA)",
+			"message_RU": "",
+			"class_position": "priest"
+		});
+		handlers['text']({
+			"sub_type": "message",
+			"message": "Knockback SPIN INC(KAIA)",
+			"message_RU": "",
+			"class_position": "mystic"
+		});
+		handlers['text']({
+			"sub_type": "message",
 			"message": "Knockback SPIN INC",
-			"message_RU": ""
+			"message_RU": "",
 		});
 	}
 }
