@@ -63,8 +63,8 @@ module.exports = {
 	// {"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,1500,5000)}],
 
 	//Over There
-	"qb-3106-1000-31061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
+	"qb-3106-1000-32061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
 	//Back There
-	"qb-3106-1000-31061002": [{ "type": "text", "sub_type": "message", "message": "Debuff(Furthest)", "message_RU": "" }]
+	"qb-3106-1000-32061002": [{ "type": "text", "sub_type": "message", "message": "Debuff(Furthest)", "message_RU": "" }]
 
 }
