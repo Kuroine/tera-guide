@@ -13,11 +13,11 @@ function combo_checker(){
 }
 function combo_cont(handlers){
 	if(combo_start == true){
-		handlers['text']({
-			"sub_type": "message",
-			"message": "Knockback SPIN INC(KAIA)",
-			"message_RU": ""
-		});
+		// handlers['text']({
+		// 	"sub_type": "message",
+		// 	"message": "Knockback SPIN INC(KAIA)",
+		// 	"message_RU": ""
+		// });
 	}
 }
 
