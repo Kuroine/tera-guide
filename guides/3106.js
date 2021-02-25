@@ -9,15 +9,15 @@ let combo_start = false;
 
 function combo_checker(){
 	combo_start = true;
-	setTimeout(() => combo_start = false, 4000);
+	setTimeout(() => combo_start = false, 1800);
 }
-function combo_cont(handlers){
-	if(combo_start == true){
-		// handlers['text']({
-		// 	"sub_type": "message",
-		// 	"message": "Knockback SPIN INC(KAIA)",
-		// 	"message_RU": ""
-		// });
+function combo_cont(handlers) {
+	if (combo_start == true) {
+		handlers['text']({
+			"sub_type": "message",
+			"message": "Knockback SPIN INC(KAIA)",
+			"message_RU": ""
+		});
 	}
 }
 
