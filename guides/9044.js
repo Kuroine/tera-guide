@@ -2,7 +2,7 @@
 //
 // made by michengs
 
-const {SpawnMarker, SpawnPoint, SpawnVector, SpawnCircle} = require("../lib");
+const {SpawnMarker, SpawnPoint, SpawnVector, SpawnCircle, SpawnSemicircle} = require("../lib");
 
 let player, entity, library, effect;
 let notice_guide = true;
@@ -270,9 +270,17 @@ module.exports = {
 						  //{"type": "func","func": skillds_event.bind(null, 118)}
 	],
 	"s-444-2000-1119-0": [{"type": "text","sub_type": "message","message": 'Left swipe',"message_RU": "Слева"},
-						  {"type": "func","func": SpawnMarker.bind(null,false,270,300,100,2000,true,null)}
+							{ "type": "spawn", "func": SpawnSemicircle.bind(null, 0, 180, 912, 0, 0, 20, 160, 0, 2000)},
+							{ "type": "spawn", "func": SpawnSemicircle.bind(null, 0, 180, 912, 0, 0, 12, 220, 0, 2000)},
+							{ "type": "spawn", "func": SpawnSemicircle.bind(null, 0, 180, 912, 0, 0, 10, 300, 0, 2000)},
+							{ "type": "spawn", "func": SpawnSemicircle.bind(null, 0, 180, 912, 0, 0, 8, 360, 0, 2000)},
+							{"type": "func","func": SpawnMarker.bind(null,false,270,300,100,2000,true,null)}
 	],
 	"s-444-2000-120-0": [{"type": "text","sub_type": "message","message": 'Right swipe',"message_RU": "Справа"},
+						 { "type": "spawn", "func": SpawnSemicircle.bind(null, 180, 360, 912, 0, 0, 20, 160, 0, 2000)},
+						 { "type": "spawn", "func": SpawnSemicircle.bind(null, 180, 360, 912, 0, 0, 12, 220, 0, 2000)},
+						 { "type": "spawn", "func": SpawnSemicircle.bind(null, 180, 360, 912, 0, 0, 10, 300, 0, 2000)},
+						 { "type": "spawn", "func": SpawnSemicircle.bind(null, 180, 360, 912, 0, 0, 8, 360, 0, 2000)},
 						 {"type": "func","func": SpawnMarker.bind(null,false,90,300,100,2000,true,null)}
 	],
 	"s-444-2000-1121-0": [{"type": "text","sub_type": "message","message": 'Waves (Left)',"message_RU": "Волны (левая)"},
@@ -357,7 +365,7 @@ module.exports = {
 						  {"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,6000)},
 						  {"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,6000)}
 	],
-	"s-444-2000-1312-0": [{"type": "text","sub_type": "message","message": 'Wrath!',"message_RU": "Облепиха"},
+	"s-444-2000-1312-0": [{"type": "text","sub_type": "message","message": 'Wrath',"message_RU": "Облепиха"},
 						  {"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,6000)},
 						  {"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,6000)}],
 	//---------------------------------------------------------------------------------------------------
@@ -460,7 +468,7 @@ module.exports = {
 						  {"type": "func","func": SpawnVector.bind(null,553,270,50,180,500,0,6000)},
 						  {"type": "text","sub_type": "message","delay": 60000,"message": 'Waves soon...',"message_RU": "Скоро волны"}
 	],
-	"s-444-2000-2141-0": [{"type": "text","sub_type": "message","message": 'Waves (Right) 3nd fast',"message_RU": "Волны (правая) 3 быстрая"},
+	"s-444-2000-2141-0": [{"type": "text","sub_type": "message","message": 'Waves (Right) 3rd fast',"message_RU": "Волны (правая) 3 быстрая"},
 						  {"type": "func","func": SpawnVector.bind(null,553,90,50,0,500,0,6000)},
 						  {"type": "func","func": SpawnVector.bind(null,553,90,50,180,500,0,6000)},
 						  {"type": "func","func": SpawnVector.bind(null,553,270,50,0,500,0,6000)},
