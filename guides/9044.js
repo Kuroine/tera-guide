@@ -270,10 +270,13 @@ module.exports = {
 						  //{"type": "func","func": skillds_event.bind(null, 118)}
 	],
 	"s-444-2000-1119-0": [{"type": "text","sub_type": "message","message": 'Left swipe',"message_RU": "Слева"},
-							{"type": "func","func": SpawnMarker.bind(null,false,270,150,0,2500,true,null)}
+							{"type": "func","func": SpawnPoint.bind(null,513,90,100,0,2500)},
+							{"type": "func","func": SpawnMarker.bind(null,false,270,300,0,2500,true,null)}
 	],
 	"s-444-2000-120-0": [{"type": "text","sub_type": "message","message": 'Right swipe',"message_RU": "Справа"},
-						 {"type": "func","func": SpawnMarker.bind(null,false,90,150,0,2500,true,null)}
+						 {"type": "func","func": SpawnPoint.bind(null,513,-90,100,0,2500)},
+
+						 {"type": "func","func": SpawnMarker.bind(null,false,90,300,0,2500,true,null)}
 	],
 	"s-444-2000-1121-0": [{"type": "text","sub_type": "message","message": 'Waves (Left)',"message_RU": "Волны (левая)"},
 						  {"type": "func","func": SpawnVector.bind(null,553,90,50,0,500,0,6000)},

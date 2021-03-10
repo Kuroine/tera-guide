@@ -26,6 +26,10 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
+	"h-3106-1000-100": [
+		{"type": "func","func": SpawnVector.bind(null,553,0,-100,183,800,100,60000000)},
+	],
+
 	//102 - 105 - 106 Combo
 
 	"s-3106-1000-102-0": [{"type": "func","func": combo_checker}],
