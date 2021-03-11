@@ -2,7 +2,7 @@
     "files": {
         "LICENSE": "7f2ae2125b491e75c546a5d538f82ad4431d5d6b1bbd4aea724864a21daeca63",
         "README.md": "56fca704f44a9c732d185aa5c841a92f658e1223e1bb3ede77dbd4cfa6fe7466",
-        "config.json": "281f976d8a77af088faab7e441b242fd936469df4316f6f5c59e939bdc0ff805",
+        "config.json": "3682ad343297571ea8300cad64278997c5d9606181986b0cbdc85346d3877cd2",
         "dispatch.js": "8550f756e05b171839867491a9f52385f1aef8bfbbed3c80e0afe6aff1d53902",
         "guides/3020.js": "d53d2acd9b40eed608a216ce5890459078297ed13bf996f445f5713e92b501a2",
         "guides/3023.js": "d66f1e57ffc0327db8afe06c6365b7dc1b77de3fa19e2e8bc2bcef74bafe4201",
@@ -23,6 +23,7 @@
         "guides/9044.js": "ff87d7d4e4cbe605adb9eb9c4c450c0d77d4030d3708c42f730bf2731654a88f",
         "guides/9056.js": "0d35389459e0d53ad02152073219324b48eae66c64137d1c560a5d025907c57d",
         "guides/9067.js": "a65a421bd51d0efd37cd38ad9de01722b6a3efc63da90168ea0b4af70946237c",
+        "guides/9070.js": "4aa8f52906d53a14af3fbd121d21f09d2877b683c269d5f3f5debfb0c6e4adb7",
         "guides/9720.js": "118a40f41fa6b7b76f84d5fc8b7dacd160092b0678f1b7876507e94980931804",
         "guides/9735.js": "629ca59feb93bbc7851ff559264681d6d8f2c3331d012c5e8ac31c36852410ca",
         "guides/9781.js": "7c7ff0507938869fca35c11682e39978b06cbc9b109581577e1edfb6a6ca0f6f",
@@ -35,7 +36,7 @@
         "index.js": "3d748fc4d46b13047ac41139cceb2964712f31058d9da94e5ebd8b03f82bcadb",
         "lib.js": "79e369a4c94e335b1fc8e303a31cd8fb655f3d6f5d9905c9d2580cafe63ba39a",
         "module.json": "318993c0aceca9129897e57b8f15ca589c9520b99aaac77bb47469b75a92caee",
-        "settings_migrator.js": "0a9e7130f27a8e808f145cb3dc1ee4ab33e73dd430c5340e4bdf539a01eda068",
+        "settings_migrator.js": "ce6c3097deff898eb505d343915ea60a577bdd1d240c880ce16d15cbe3f932d5",
         "voice/index.js": "ddc3b734b37593c247a95ad1e5e8df1579a91832959c57e307201fb707f95958",
         "zones/esguidezones.json": "e87b79003fc330eac1e897f9424216f99f8159acde52ef3d841e1d09e4b3bb6b",
         "zones/spguidezones.json": "0bedf490e374e529c1acc5742a91eed67a9e78f47f15065322c1c08b48a60494"
@@ -51,6 +52,7 @@
         "S_DESPAWN_BUILD_OBJECT": 2,
         "S_DESPAWN_COLLECTION": 2,
         "S_DESPAWN_DROPITEM": 4,
+        "S_DUNGEON_EVENT_GAGE": 1,
         "S_DUNGEON_EVENT_MESSAGE": 2,
         "S_LOAD_TOPO": 3,
         "S_PARTY_MARKER": 1,

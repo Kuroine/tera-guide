@@ -1,5 +1,5 @@
 {
-    "version": "1.04",
+    "version": "104",
     "data": {
         "enabled": true,
         "systemNotice": false,
@@ -203,6 +203,13 @@
             {
                 "id": 3206,
                 "name": "Crimson Killing Grounds",
+                "name_RU": "",
+                "verbose": true,
+                "spawnObject": true
+            },
+            {
+                "id": 9070,
+                "name": "Manglemire",
                 "name_RU": "",
                 "verbose": true,
                 "spawnObject": true

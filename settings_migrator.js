@@ -29,7 +29,8 @@ const DefaultSettings = {
 		{"id": 9935, "name": "RK-9 Kennel (Hard)", "name_RU": "Ангар совершенного RK-9", "verbose": true, "spawnObject": true},
 		{"id": 9970, "name": "Ruinous Manor (Hard)", "name_RU": "Руины Кошмарной Абнукты", "verbose": true, "spawnObject": true},
 		{"id": 9981, "name": "Velik's Sanctuary (Hard)", "name_RU": "Разрушенное Святилище Велики", "verbose": true, "spawnObject": true},
-		{"id": 9982, "name": "Grotto of Lost Souls (Hard)", "name_RU": "Заброшенная мастерская Леандра", "verbose": true, "spawnObject": true}
+		{"id": 9982, "name": "Grotto of Lost Souls (Hard)", "name_RU": "Заброшенная мастерская Леандра", "verbose": true, "spawnObject": true},
+		{"id": 3103, "name": "Forbidden Arena [Undying Warlord]", "name_RU": "Заброшенная мастерская Леандра", "verbose": true, "spawnObject": true}
 	],
 	"cc": [
 		"</font><font color=\"#ffff00\">"
