@@ -27,7 +27,7 @@ module.exports = {
     },
 
 	"h-3106-1000-100": [
-		{"type": "func","func": SpawnVector.bind(null,553,0,-100,183,800,100,60000000)},
+		{"type": "func","func": SpawnMarker.bind(null,false,3,-700,100,60000000,true,["Giant","Giant Direction"])},
 	],
 
 	//102 - 105 - 106 Combo
