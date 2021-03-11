@@ -1,5 +1,5 @@
 # tera-guide
-A generic guide module for TERA with English and Russian translations (detects automaticly). Display hints on screen and drawing zones of bosses attacks and mechanics. Supports of all actual dungeons.
+A generic guide module for TERA with English and **Russian translations(Not maintained in this repo)**. Display hints on screen and drawing zones of bosses attacks and mechanics. Supports of all actual dungeons.
 
 ## Dependencies
 https://github.com/tera-toolbox-mods/library
@@ -36,6 +36,12 @@ id | Dungeon Name
 3027 | Forbidden Arena
 3102 | Draakon Arena
 3202 | Draakon Arena (Hard)
+3103 | Forbidden Arena [Undying Warlord]
+3104 | Catalepticon
+3204 | Catalepticon (Hard)
+3106 | Killing Grounds
+3206 | Crimson Killing Grounds
+9070 | *Manglemire* (To be tested in p104)
 
 ## Development and debugging
  Details: https://github.com/Kuroine/tera-guide/wiki
