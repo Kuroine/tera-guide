@@ -273,7 +273,7 @@ module.exports = {
 							{"type": "func","func": SpawnPoint.bind(null,513,-90,100,0,2500)},
 							{"type": "func","func": SpawnMarker.bind(null,false,270,300,0,2500,true,null)}
 	],
-	"s-444-2000-120-0": [{"type": "text","sub_type": "message","message": 'Right swipe(LEFT)',"message_RU": "Справа"},
+	"s-444-2000-1120-0": [{"type": "text","sub_type": "message","message": 'Right swipe(LEFT)',"message_RU": "Справа"},
 						 {"type": "func","func": SpawnPoint.bind(null,513,90,100,0,2500)},
 						 {"type": "func","func": SpawnMarker.bind(null,false,90,300,0,2500,true,null)}
 	],
