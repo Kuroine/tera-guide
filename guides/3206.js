@@ -56,8 +56,8 @@ module.exports = {
 	"s-3206-1000-509-0": [{ "type": "text", "sub_type": "message", "message": "Blue(OUT-IN)", "message_RU": "" },
 	//{"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
 	//{"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,1500)},
-	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,180,1500,5000)},
-	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,350,1500,5000)}],
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,143,1500,5000)},
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,1500,5000)}],
 
 	"s-3206-1000-516-0": [{ "type": "text", "sub_type": "message", "message": "Fast Red(IN-OUT)", "message_RU": "" },
 	//{"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
@@ -67,8 +67,8 @@ module.exports = {
 	"s-3206-1000-517-0": [{ "type": "text", "sub_type": "message", "message": "Fast Blue(OUT-IN)", "message_RU": "" },
 	//{"type": "func","func": SpawnVector.bind(null,553,0,0,180,500,0,2500)},
 	//{"type": "func","func": SpawnVector.bind(null,553,0,0,0,500,0,1500)},
-	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,180,1500,5000)},
-	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,350,1500,5000)}],
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,18,143,1500,5000)},
+	{"type": "func","func": SpawnCircle.bind(null,false,445,0,0,12,293,1500,5000)}],
 
 	//Over There
 	"qb-3206-1000-32061001": [{ "type": "text", "sub_type": "message", "message": "Debuff(Close)", "message_RU": "" }], 
