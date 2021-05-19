@@ -32,6 +32,8 @@ const cbl = '</font><font color="#000000">'; // black
 const cgr = '</font><font color="#777777">'; // gray
 const cw  = '</font><font color="#ffffff">'; // white
 
+let idStorage = {};
+
 class TeraGuide{
 	constructor(dispatch) {
 		const fake_dispatch = new DispatchWrapper(dispatch);
@@ -250,6 +252,14 @@ class TeraGuide{
 				const ent = entity['mobs'][e.id.toString()];
 				// We've confirmed it's a mob, so it's plausible we want to act on this
 				if (ent) return handle_event(ent, Math.floor(Number(e.curHp) / Number(e.maxHp) * 100), 'Health', 'h', debug.debug || debug.hp);
+			}
+		});
+
+		//Boss despawned
+		dispatch.hook('S_DESPAWN_NPC',3, e =>{
+			const ent = entity['mobs'][e.gameId.toString()];
+			if(ent){
+				handleEvent(["nd", ent.huntingZoneId, ent.templateId], ent, debug.debug || debug.nd);
 			}
 		});
 
@@ -654,17 +664,17 @@ class TeraGuide{
 			// Create the timer for spawning the item
 			timers[item_unique_id] = setTimeout(()=> {
 				switch(sub_type) {
-					case "collection": return dispatch.toClient('S_SPAWN_COLLECTION', 4, sending_event);
-					case "item": return dispatch.toClient('S_SPAWN_DROPITEM', 9, sending_event);
-					case "build_object": return dispatch.toClient('S_SPAWN_BUILD_OBJECT', 2, sending_event);
+					case "collection": idStorage[item_unique_id] = sub_type; return dispatch.toClient('S_SPAWN_COLLECTION', 4, sending_event);
+					case "item": idStorage[item_unique_id] = sub_type; return dispatch.toClient('S_SPAWN_DROPITEM', 9, sending_event);
+					case "build_object": idStorage[item_unique_id] = sub_type; return dispatch.toClient('S_SPAWN_BUILD_OBJECT', 2, sending_event);
 				}
 			}, event['delay'] || 0 / speed);
 			// Create the timer for despawning the item
 			timers[random_timer_id--] = setTimeout(()=> {
 				switch (sub_type) {
-					case "collection": return dispatch.toClient('S_DESPAWN_COLLECTION', 2, despawn_event);
-					case "item": return dispatch.toClient('S_DESPAWN_DROPITEM', 4, despawn_event);
-					case "build_object": return dispatch.toClient('S_DESPAWN_BUILD_OBJECT', 2, despawn_event);
+					case "collection": delete idStorage[item_unique_id]; return dispatch.toClient('S_DESPAWN_COLLECTION', 2, despawn_event);
+					case "item": delete idStorage[item_unique_id]; return dispatch.toClient('S_DESPAWN_DROPITEM', 4, despawn_event);
+					case "build_object": delete idStorage[item_unique_id]; return dispatch.toClient('S_DESPAWN_BUILD_OBJECT', 2, despawn_event);
 				}
 			}, event['sub_delay'] / speed);
 		}
@@ -672,24 +682,43 @@ class TeraGuide{
 		// Despawn handler
 		function despawn_handler(event) {
 			// Make sure id is defined
-			if (!event['id']) return debug_message(true, "Spawn handler needs a id");
-			// 
+			if (Object.keys(idStorage).length === 0) return;
+			//if (!event['id']) return debug_message(true, "Spawn handler needs a id");
 			if (!dispatch.settings.spawnObject) return;
 			// Ignore if dispatch.settings.streamer mode is enabled
 			if (dispatch.settings.stream) return;
 			// Set sub_type to be collection as default for backward compatibility
-			const sub_type =  event['sub_type'] || 'collection';
+			const sub_type = event['sub_type'] || 'collection';
 			const despawn_event = {
-				gameId: event['id'],
-				unk: 0, // used in S_DESPAWN_BUILD_OBJECT
-				collected: false // used in S_DESPAWN_COLLECTION
+				gameId: 0, //Temp 0
 			};
-			switch (sub_type) {
-				case "collection": return dispatch.toClient('S_DESPAWN_COLLECTION', 2, despawn_event);
-				case "item": return dispatch.toClient('S_DESPAWN_DROPITEM', 4, despawn_event);
-				case "build_object": return dispatch.toClient('S_DESPAWN_BUILD_OBJECT', 2, despawn_event);
-				default: return debug_message(true, "Invalid sub_type for despawn handler:", event['sub_type']);
+			const despawn_collection = {
+				gameId: 0,
+				collected: false
 			}
+			for (const key in idStorage) {
+				switch (idStorage[key]) {
+					case "collection": 
+					console.log('collection');
+					despawn_collection.gameId = parseInt(key); 
+					dispatch.toClient('S_DESPAWN_COLLECTION', 2, despawn_collection); 
+					break;
+					case "item": 
+					console.log('dropitem');
+					despawn_event.gameId = parseInt(key);  
+					dispatch.toClient('S_DESPAWN_DROPITEM', 4, despawn_event); 
+					break;
+					case "build_object": 
+					console.log('object');
+					despawn_event.gameId = parseInt(key);  
+					dispatch.toClient('S_DESPAWN_BUILD_OBJECT', 2, despawn_event); 
+					break;
+					default: return debug_message(true, "Invalid sub_type for despawn handler:", event['sub_type']);
+				}
+			}
+			for (let key in timers) clearTimeout(timers[key]);
+			timers = {};
+			idStorage = {};
 		}
 		// Text handler
 		function text_handler(event, ent, speed = 1.0) {

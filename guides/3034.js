@@ -171,6 +171,10 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
 	},
 
+	"nd-3034-1000": [
+		{"type": "despawn"}
+	],
+
 	// 1 BOSS
 	"qb-3034-1000-3034101": [{"type": "text","sub_type": "message","message": "Pizza", "message_RU": "Пицца"}],
 	"qb-3034-1000-3034102": [{"type": "text","sub_type": "message","message": "AOE! JUMP", "message_RU": "AOE! Прыгай!!!"}],

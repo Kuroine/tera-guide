@@ -250,6 +250,11 @@ function skilld_event(skillid, handlers, event, entity, dispatch) {
 }
 
 let skills = {
+
+	"nd-3126-1000": [
+		{"type": "despawn"}
+	],
+
 	"112-0": [{"type": "text","sub_type": "message","message": "Ice DOT","message_RU": "Лед (полоса)"}],
 	"110-0": [{"type": "text","sub_type": "message","message": "Fire DOT","message_RU": "Огонь (лужа)"}],
 	"108-0": [{"type": "text","sub_type": "message","message": "Turn right (repel!!)","message_RU": "Поворот вправо (откид!!)"},{"type": "func","func": SpawnCircle.bind(null,false,912,0,0,8,440,0,2000)}],

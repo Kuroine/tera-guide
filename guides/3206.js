@@ -27,7 +27,11 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
-	"h-3206-1000-100": [
+	"nd-3206-1000": [
+		{"type": "despawn"}
+	],
+
+	"h-3206-1000-99": [
 		{"type": "func","func": SpawnMarker.bind(null,false,3,-700,100,60000000,true,["Giant","Giant Direction"])},
 	],
 

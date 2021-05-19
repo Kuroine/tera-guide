@@ -8,6 +8,7 @@
         "skill": false,
         "boss": false,
         "dm": false,
-        "qb": false
+        "qb": false,
+        "nd": false
     }
 }

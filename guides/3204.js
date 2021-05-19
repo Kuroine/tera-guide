@@ -9,6 +9,10 @@ module.exports = {
 		({ player, entity, library, effect } = dispatch.require.library);
     },
 
+	"nd-3204-1000": [
+		{"type": "despawn"}
+	],
+
 	"qb-3204-1000-32042000": [{ "type": "text", "sub_type": "message", "message": "Arrows", "message_RU": "" }],
 	//"h-3204-1000-35": [{ "type": "text", "sub_type": "message", "message": "35%", "message_RU": "35%" }],
 
