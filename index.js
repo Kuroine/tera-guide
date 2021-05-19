@@ -699,17 +699,14 @@ class TeraGuide{
 			for (const key in idStorage) {
 				switch (idStorage[key]) {
 					case "collection": 
-					console.log('collection');
 					despawn_collection.gameId = parseInt(key); 
 					dispatch.toClient('S_DESPAWN_COLLECTION', 2, despawn_collection); 
 					break;
 					case "item": 
-					console.log('dropitem');
 					despawn_event.gameId = parseInt(key);  
 					dispatch.toClient('S_DESPAWN_DROPITEM', 4, despawn_event); 
 					break;
 					case "build_object": 
-					console.log('object');
 					despawn_event.gameId = parseInt(key);  
 					dispatch.toClient('S_DESPAWN_BUILD_OBJECT', 2, despawn_event); 
 					break;
