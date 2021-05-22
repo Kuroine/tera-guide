@@ -32,7 +32,8 @@ const cbl = '</font><font color="#000000">'; // black
 const cgr = '</font><font color="#777777">'; // gray
 const cw  = '</font><font color="#ffffff">'; // white
 
-let idStorage = {};
+let idStorage = {}; //Despawn IDs
+let hpArray = []; //Hp Array
 
 class TeraGuide{
 	constructor(dispatch) {
@@ -250,8 +251,16 @@ class TeraGuide{
 			// If the guide module is active and a guide for the current dungeon is found
 			if(dispatch.settings.enabled && guide_found) {
 				const ent = entity['mobs'][e.id.toString()];
-				// We've confirmed it's a mob, so it's plausible we want to act on this
-				if (ent) return handle_event(ent, Math.floor(Number(e.curHp) / Number(e.maxHp) * 100), 'Health', 'h', debug.debug || debug.hp);
+				if (ent) {
+					// We've confirmed it's a mob, so it's plausible we want to act on this
+					let hpValue = Math.floor(Number(e.curHp) / Number(e.maxHp) * 100);
+					if (hpArray.includes(hpValue)) return;
+					else {
+						hpArray.push(hpValue);
+						return handle_event(ent, hpValue, 'Health', 'h', debug.debug || debug.hp);
+					} 
+					//if (ent) return handle_event(ent, Math.floor(Number(e.curHp) / Number(e.maxHp) * 100), 'Health', 'h', debug.debug || debug.hp);
+				}
 			}
 		});
 
@@ -260,6 +269,7 @@ class TeraGuide{
 			//const ent = entity['mobs'][e.gameId.toString()];
 			const ent = entity.mobs[e.gameId.toString()];
 			if(ent){
+				hpArray = []; //Reset HP Array
 				return handleEvent(["nd", ent.huntingZoneId, ent.templateId], ent, debug.debug || debug.nd);
 			}
 		});
@@ -300,6 +310,9 @@ class TeraGuide{
 			// Clear out the timers
 			for (let key in timers) clearTimeout(timers[key]);
 			timers = {};
+			idStorage = {};
+			//Clear Out The HP Array
+			hpArray = [];
 			// Clear out previous hooks, that our previous guide module hooked
 			fake_dispatch._remove_all_hooks();
 			// Send debug message
