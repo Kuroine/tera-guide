@@ -266,8 +266,8 @@ class TeraGuide{
 
 		//Boss despawned
 		dispatch.hook('S_DESPAWN_NPC',3, e =>{
-			//const ent = entity['mobs'][e.gameId.toString()];
-			const ent = entity.mobs[e.gameId.toString()];
+			const ent = entity['mobs'][e.gameId.toString()];
+			//const ent = entity.mobs[e.gameId.toString()];
 			if(ent){
 				hpArray = []; //Reset HP Array
 				return handleEvent(["nd", ent.huntingZoneId, ent.templateId], ent, debug.debug || debug.nd);
