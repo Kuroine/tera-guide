@@ -241,7 +241,7 @@ class TeraGuide{
 				if (target_ent) handle_event(target_ent, e.id, 'Abnormality', 'ab', debug.debug || debug.abnormal);
 			}
 		}
-		dispatch.hook('S_ABNORMALITY_BEGIN', 4, {order: 15}, abnormality_triggered);
+		dispatch.hook('S_ABNORMALITY_BEGIN', 5, {order: 15}, abnormality_triggered);
 		dispatch.hook('S_ABNORMALITY_REFRESH', 2, {order: 15}, abnormality_triggered);
 
 		/** HEALTH **/
